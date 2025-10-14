@@ -1,50 +1,40 @@
-# Welcome to your Expo app 👋
+# React Native Movie Example application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Introduction
 
-## Get started
+https://www.youtube.com/watch?v=f8Z9JyB2EIE
 
-1. Install dependencies
+New features, that make React Native now fast:
 
-   ```bash
-   npm install
-   ```
+- JSI
+- TurboModolus
+- Fabric
 
-2. Start the app
+NativeWind --> TailWindCSS for ReactNative
+Flexbox by default - View
 
-   ```bash
-   npx expo start
-   ```
+Touchable components for buttons
 
-In the output, you'll find options to open the app in a
+FlatList - long lists of items that needs to be scrolled
+ScrollView - like overflow in HTML
+SafeAreaZone
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+react-native-safe-area-context
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Image, ImageBackground
+react-native-svg
+Switch
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Setting up the styling
 
-```bash
-npm run reset-project
-```
+To install TailWindCSS to the project, jsut follow through:
+https://www.nativewind.dev/docs/getting-started/installation
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+If you are changing the place of the `global.css`, then make sure, that you are
+setting it in the `tailwind.config.js`.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Also you can add the custom colors to the theme in the `tailwind.config.js`.
+Watch https://www.youtube.com/watch?v=6biMWgD6_JY to make sure you are on top of
+your Tailwind CSS game, if you need it.
