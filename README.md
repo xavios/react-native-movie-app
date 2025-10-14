@@ -38,3 +38,5 @@ setting it in the `tailwind.config.js`.
 Also you can add the custom colors to the theme in the `tailwind.config.js`.
 Watch https://www.youtube.com/watch?v=6biMWgD6_JY to make sure you are on top of
 your Tailwind CSS game, if you need it.
+
+35:56
