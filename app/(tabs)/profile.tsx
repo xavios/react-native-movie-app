@@ -5,8 +5,8 @@ type Props = {};
 
 const Profile = (props: Props) => {
   return (
-    <View>
-      <Text>profile</Text>
+    <View className="flex-1 justify-center items-center">
+      <Text className="text-6xl">My Profile</Text>
     </View>
   );
 };

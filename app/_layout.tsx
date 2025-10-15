@@ -5,7 +5,7 @@ import "./globals.css";
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView className="flex-1" edges={["top"]}>
+      <SafeAreaView className="flex-1" edges={["top", "right", "left"]}>
         <Stack>
           <Stack.Screen
             name="(tabs)"

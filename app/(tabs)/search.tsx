@@ -5,8 +5,8 @@ type Props = {};
 
 const Search = (props: Props) => {
   return (
-    <View>
-      <Text>search</Text>
+    <View className="flex-1 justify-center items-center">
+      <Text className="text-6xl">Search for movies.</Text>
     </View>
   );
 };

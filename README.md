@@ -88,9 +88,10 @@ export default function RootLayout() {
 }
 ```
 
-replace the assets
-
-customizing the tabs
+- replace the assets
+- customizing the tabs --> tabBarIcon
+  - make sure to create a custom component out of it in the same layout file
+    to make it reusable
 
 ---
 
@@ -98,3 +99,4 @@ Parking Lot of Ideas:
 
 - add proper video playing for the trailer for the Squid Game
 - add profile with authentication as a next step
+- properly animated tab bar: [video](https://www.youtube.com/watch?v=GrLCS5ww030)

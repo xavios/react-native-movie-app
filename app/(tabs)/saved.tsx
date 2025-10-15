@@ -5,8 +5,8 @@ type Props = {};
 
 const Saved = (props: Props) => {
   return (
-    <View>
-      <Text>saved</Text>
+    <View className="flex-1 justify-center items-center">
+      <Text className="text-6xl">Saved movies.</Text>
     </View>
   );
 };
