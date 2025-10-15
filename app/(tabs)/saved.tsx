@@ -1,18 +1,16 @@
-import { useLocalSearchParams } from "expo-router";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 type Props = {};
 
-const Movie = (props: Props) => {
-  const { id } = useLocalSearchParams();
+const Saved = (props: Props) => {
   return (
     <View>
-      <Text>Movie - {id}</Text>
+      <Text>saved</Text>
     </View>
   );
 };
 
-export default Movie;
+export default Saved;
 
 const styles = StyleSheet.create({});

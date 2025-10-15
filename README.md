@@ -52,19 +52,49 @@ movie/[id],tsx - dynamic routing
 
 ---
 
-add proper video playing for the trailer for the Squid Game
-add profile with authentication as a next step
-routing grouping
+[Routing groups](https://docs.expo.dev/develop/file-based-routing/#groups)
 
 (tabs)/profile, /search /index, \_layout.tsx
 movie/[id].tsx
 
-into the root layout make sure to add the <stack> and <stack.screen> to hide the header of the group
+Into the root layout make sure to add the <stack> and <stack.screen> to hide the header of the group
 
-into the grup layout add the tabs from expo and hide the header there as well
+Into the group layout add the tabs from expo and hide the header there as well.
 tabs adds bottom navigation!
 tabs.screen
+
+To make sure that we are not rendering into the top piece, use this self-contained
+minimal example of `SafeAreaContext` from Copilot:
+
+```javascript
+// app/_layout.tsx or app/RootLayout.tsx
+import { Stack } from "expo-router";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import "./globals.css"; // NativeWind styles
+
+export default function RootLayout() {
+  return (
+    <SafeAreaProvider>
+      <SafeAreaView className="flex-1">
+        <Stack>
+          <Stack.Screen
+            name="(tabs)"
+            options={{ title: "Tabs", headerShown: false }}
+          />
+        </Stack>
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
+}
+```
 
 replace the assets
 
 customizing the tabs
+
+---
+
+Parking Lot of Ideas:
+
+- add proper video playing for the trailer for the Squid Game
+- add profile with authentication as a next step
