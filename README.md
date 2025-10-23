@@ -43,10 +43,6 @@ your Tailwind CSS game, if you need it.
 
 ## Adding routing
 
-create onboardin.tsx
-use snippet to populate w/ styles
-add a link properly from expo routing
-
 movie/[id],tsx - dynamic routing
 [useLocalSearchParams()](https://docs.expo.dev/router/reference/url-parameters/)
 
@@ -57,17 +53,17 @@ movie/[id],tsx - dynamic routing
 (tabs)/profile, /search /index, \_layout.tsx
 movie/[id].tsx
 
-Into the root layout make sure to add the <stack> and <stack.screen> to hide the header of the group
+Into the root layout make sure to add the <Stack> and <Stack.Screen> to hide the
+header of the group.
 
 Into the group layout add the tabs from expo and hide the header there as well.
-tabs adds bottom navigation!
-tabs.screen
+Tabs adds bottom navigation!
+<Tabs.Screen>
 
 To make sure that we are not rendering into the top piece, use this self-contained
-minimal example of `SafeAreaContext` from Copilot:
+minimal example of `SafeAreaContext` from Copilot in the global layout:
 
 ```javascript
-// app/_layout.tsx or app/RootLayout.tsx
 import { Stack } from "expo-router";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import "./globals.css"; // NativeWind styles
@@ -90,8 +86,13 @@ export default function RootLayout() {
 
 - replace the assets
 - customizing the tabs --> tabBarIcon
+
   - make sure to create a custom component out of it in the same layout file
     to make it reusable
+
+- I've moved the TabIcons to a new folder, called `components`
+- I've also made sure to fix the readabilty on the Tab.Screen repetitions in
+  the group layout.
 
 ---
 
@@ -100,3 +101,9 @@ Parking Lot of Ideas:
 - add proper video playing for the trailer for the Squid Game
 - add profile with authentication as a next step
 - properly animated tab bar: [video](https://www.youtube.com/watch?v=GrLCS5ww030)
+
+---
+
+TODO for learning:
+
+- rewise routes, understand law of hooks
