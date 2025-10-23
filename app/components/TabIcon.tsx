@@ -8,7 +8,7 @@ import {
   View,
 } from "react-native";
 
-export const TabIcon = ({
+const TabIcon = ({
   focused = false,
   name,
   icon,
@@ -32,3 +32,5 @@ export const TabIcon = ({
       <Image source={icon} tintColor={"#A8B5DB"} className="size-5"></Image>
     </View>
   );
+
+export default TabIcon;

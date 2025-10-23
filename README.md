@@ -94,6 +94,18 @@ export default function RootLayout() {
 - I've also made sure to fix the readabilty on the Tab.Screen repetitions in
   the group layout.
 
+## Building up the UI of the Home Page
+
+1. flex-1 view
+2. Image for the bg make it full width
+3. ScrollView, and add the logo in the middle and remove the scrollbar
+4. add the Search component as a separate component
+   a) icon
+   b) textInput
+   c) props: onPress, placeHolder
+5. useRouter() in the index from 'expo-route', and NOT
+   `import { useRoute } from "@react-navigation/native";`
+
 ---
 
 Parking Lot of Ideas:
